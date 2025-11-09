@@ -1,0 +1,539 @@
+/* ================================
+    ESTILOS GENERALES
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('../img/fondo2.jpg'); /* Imagen de fondo */
+    background-size: cover;       /* Cubre toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Fijo al hacer scroll */
+    color: #333;                  /* Mantiene el texto oscuro */
+    line-height: 1.6;
+}
+
+/* Agrega una capa translúcida para que el texto se lea mejor */
+main, section {
+    background-color: rgba(247, 245, 244, 0.493); /* Naranja translúcido */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 0; /* Evita espacios vacíos */
+}
+
+
+
+/* ================================
+    HEADER Y NAVEGACIÓN
+================================ */
+header {
+    background-color: #141414;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #e63946;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e63946;
+}
+
+/* ================================
+    SECCIONES GENERALES
+================================ */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ================================
+    HERO (PÁGINA PRINCIPAL)
+================================ */
+.hero {
+    background: url('../img/hero-burger.jpg') center/cover no-repeat;
+    color: rgb(12, 12, 12);
+    padding: 100px 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.site-header {
+    position: sticky;
+}
+
+/* ================================
+   BOTONES
+================================ */
+.btn {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d62828;
+    transform: scale(1.05);
+}
+
+/* ================================
+   GALERÍA
+================================ */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.grid-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ================================
+   SERVICIOS
+================================ */
+.services ul {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.services li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+
+/* ================================
+   BLOG
+================================ */
+.blog article {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.blog h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+/* ================================
+   FORMULARIO DE CONTACTO
+================================ */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* ================================
+   SECCIÓN: FEATURES (Inicio)
+================================ */
+.features {
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.788); /* Naranja translúcido */
+    border-radius: 20px; /* Bordes suaves */
+    padding: 40px 20px; /* Espacio interno */
+}
+
+.features h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.features .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.features .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.features .card:hover {
+    transform: scale(1.05);
+}
+
+.features .card img {
+    width: 110px;         
+    height: 110px;
+    object-fit: cover;     
+    border-radius: 50%;    
+    margin-bottom: 15px;
+}
+
+/* Estilo de los títulos y texto dentro de cada tarjeta */
+.features .card h4 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.features .card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+/* ================================
+    FOOTER
+================================ */
+footer {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ================================
+    TESTIMONIALS
+================================ */
+.testimonials {
+    background-color: rgba(255,255,255,0.9);
+    padding: 60px 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.testimonials__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.testimonials__item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 280px;
+}
+
+.testimonials__item--highlight {
+    border: 2px solid #e63946;
+    transform: scale(1.05);
+}
+
+.testimonials__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonials__name {
+    font-weight: 700;
+    color: #e63946;
+}
+
+.testimonials__role {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* ================================
+    PRICING
+================================ */
+.pricing {
+    background-color: rgba(20,20,20,0.9);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.pricing__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pricing__plan {
+    background: #fff;
+    color: #222;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pricing__plan--featured {
+    border: 3px solid #e63946;
+    transform: scale(1.05);
+}
+
+.pricing__price {
+    font-size: 2rem;
+    color: #e63946;
+    margin: 10px 0;
+}
+
+.pricing__features {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.pricing__features li {
+    margin-bottom: 8px;
+}
+
+/* ================================
+    CONTACT
+================================ */
+.contact {
+    background-color: rgba(255,255,255,0.95);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.contact__form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact__input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact__textarea {
+    min-height: 120px;
+}
+
+.contact__button {
+    align-self: center;
+}
+
+/* ==== SECCIÓN NUESTRO EQUIPO ==== */
+
+.team {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team .grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team .card {
+    background-color: #fafafa;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team .card:hover {
+    transform: translateY(-10px);
+}
+
+.team .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.team .card h4 {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 10px 0 5px;
+}
+
+.team .card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ================================
+   GALERÍA DE HAMBURGUESAS
+================================ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático */
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+  align-items: stretch; /* Hace que todas las tarjetas tengan la misma altura */
+}
+
+/* Estilo de cada tarjeta */
+.gallery-grid figure {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Efecto hover (al pasar el cursor) */
+.gallery-grid figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Ajuste uniforme para todas las imágenes */
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Mantiene proporciones sin deformar */
+  display: block;
+} 
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+  color: #c0392b;
+  margin-bottom: 15px;
+}
+
+.service video {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}

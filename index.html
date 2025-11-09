@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Proyecto: Burgy 🍔 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burgy| Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="logo">Burgy</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>¡Las hamburguesas más artesanales de Envigado!</h2>
+            <p>En Burgy usamos ingredientes frescos, pan artesanal y carne 100% natural.</p>
+            <a href="servicios.html" class="btn-primary">Ver nuestro menú</a>
+        </section>
+        
+
+
+        <section class="features">
+            <h3>¿Por qué elegirnos?</h3>
+            <div class="grid">
+                <article class="card">
+                    <img src="img/ingredientes-frescos.jpg" alt="Ingredientes frescos">
+                    <h4>Ingredientes frescos</h4>
+                    <p>Seleccionamos cada producto para asegurar el mejor sabor en cada mordida.</p>
+                </article>
+                <article class="card">
+                    <img src="img/chef-hamburguesa.jpg" alt="preparando hamburguesa">
+                    <h4>Preparación artesanal</h4>
+                    <p>Hechas a mano, cocinadas con pasión y servidas con estilo.</p>
+                </article>
+                <article class="card">
+                    <img src="img/local-burguer.jpg" alt="Local Bury Burgers">
+                    <h4>Ambiente único</h4>
+                    <p>Un lugar perfecto para compartir, reír y disfrutar una buena hamburguesa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h3 class="testimonials__title">Lo que dicen nuestros clientes</h3>
+            <div class="testimonials__grid">
+                <article class="testimonials__item">
+                    <img src="img/maria.jpg" alt="Cliente feliz" class="testimonials__avatar">
+                    <h4 class="testimonials__name">María López</h4>
+                    <p class="testimonials__role">Cliente frecuente</p>
+                    <p class="testimonials__text">“Las mejores hamburguesas que he probado. El sabor y la atención son increíbles.”</p>
+                </article>
+
+                <article class="testimonials__item testimonials__item--highlight">
+                    <img src="img/carlos.jpg" alt="Cliente satisfecho" class="testimonials__avatar">
+                    <h4 class="testimonials__name">Carlos Gómez</h4>
+                    <p class="testimonials__role">Food Lover</p>
+                    <p class="testimonials__text">“Burgy es mi lugar favorito. Todo se siente hecho con amor y calidad.”</p>
+                </article>
+
+                <article class="testimonials__item">
+                    <img src="img/laura.jpg" alt="Cliente feliz" class="testimonials__avatar">
+                    <h4 class="testimonials__name">Laura Restrepo</h4>
+                    <p class="testimonials__role">Influencer local</p>
+                    <p class="testimonials__text">“Perfecto para ir con amigos. ¡El ambiente es genial y las papas son un vicio!”</p>
+                </article>
+                </div>
+        </section>
+
+        <section class="pricing">
+            <h3 class="pricing__title">Nuestros combos más populares</h3>
+            <div class="pricing__grid">
+
+                <article class="pricing__plan">
+                    <h4 class="pricing__name">Combo Clásico</h4>
+                    <p class="pricing__price">$18.000</p>
+                    <ul class="pricing__features">
+                    <li>🍔 Hamburguesa sencilla</li>
+                    <li>🍟 Papas medianas</li>
+                    <li>🥤 Gaseosa</li>
+                    </ul>
+                    <a href="contact.html" class="btn pricing__btn">Ordenar</a>
+                </article>
+
+                <article class="pricing__plan pricing__plan--featured">
+                    <h4 class="pricing__name">Combo Doble</h4>
+                    <p class="pricing__price">$25.000</p>
+                    <ul class="pricing__features">
+                    <li>🍔 Doble carne artesanal</li>
+                    <li>🍟 Papas grandes</li>
+                    <li>🥤 Gaseosa + postre</li>
+                    </ul>
+                    <a href="contact.html" class="btn pricing__btn">Ordenar</a>
+                </article>
+
+                <article class="pricing__plan">
+                    <h4 class="pricing__name">Combo Premium</h4>
+                    <p class="pricing__price">$32.000</p>
+                    <ul class="pricing__features">
+                    <li>🍔 Hamburguesa gourmet</li>
+                    <li>🍟 Papas rústicas</li>
+                    <li>🍹 Batido artesanal</li>
+                    </ul>
+                    <a href="contact.html" class="btn pricing__btn">Ordenar</a>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section class="contact">
+                    <h3 class="contact__title">Contáctanos</h3>
+                <form class="contact__form" action="#" method="post">
+                    <input type="text" name="nombre" placeholder="Tu nombre" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" class="contact__input" required>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." class="contact__input contact__textarea" required></textarea>
+                    <button type="submit" class="btn contact__button">Enviar mensaje</button>
+                </form>
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Burgy. Todos los derechos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/burgyenvigado?igsh=MXU0bXpiOGZ3NmQxNA==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@burgeniero/video/7560446311061916939?q=hamburguesa&t=1762660544494" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
